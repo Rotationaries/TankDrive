@@ -55,6 +55,10 @@ public class Drivetrain extends SubsystemBase {
     // This method will be called once per scheduler run
   }
 
+  public void arcadeDrive(double xSpeed, double zRotation){
+    drivetrain.arcadeDrive(xSpeed, zRotation);
+  }
+
   public Pose2d getPose() {
     return m_odometry.getPoseMeters();
   }
@@ -97,6 +101,10 @@ public class Drivetrain extends SubsystemBase {
 
   public void zeroHeading() {
     ahrs.reset();
+  }
+
+  public void stopMotors(){
+    drivetrain.stopMotor();
   }
 
   public double getHeading() {
