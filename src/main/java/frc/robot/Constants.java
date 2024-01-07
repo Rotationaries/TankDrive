@@ -16,4 +16,13 @@ public final class Constants {
   public static class OperatorConstants {
     public static final int kDriverControllerPort = 0;
   }
+
+  public static class DrivetrainConstants {
+    public static final int FL = 1;
+    public static final int BL = 2;
+    public static final int BR = 3;
+    public static final int FR = 4;
+
+    public static final boolean kGyroReversed = true;
+  }
 }
