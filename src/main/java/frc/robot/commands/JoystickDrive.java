@@ -8,12 +8,12 @@ import edu.wpi.first.wpilibj2.command.CommandBase;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import frc.robot.subsystems.Drivetrain;
 
-public class Drive extends CommandBase {
+public class JoystickDrive extends CommandBase {
   CommandXboxController controller;
   Drivetrain drive;
   
   /** Creates a new TankDrive. */
-  public Drive(CommandXboxController c, Drivetrain d) {
+  public JoystickDrive(CommandXboxController c, Drivetrain d) {
     controller = c;
     drive = d;
     addRequirements(d);
